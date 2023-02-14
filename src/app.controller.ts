@@ -18,10 +18,10 @@ export class AppController {
   }
 
   @Post('/car')
-  async newCar(@Body() car: CarDto) {
+  async newCar(@Body() data: Car) {
     const carRepo = this.dataSource.getRepository(Car);
-    carRepo.save(car);
-    return car;
+    carRepo.save(data);
+    return data;
   }
 
   @Get('/car')
