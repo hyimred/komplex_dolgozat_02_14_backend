@@ -3,7 +3,7 @@ import { IsEmail, Min, IsDateString, IsInt, IsOptional, Contains, Matches, IsNot
 
 
 @Entity()
-export default class Car {
+export default class CarDto {
     @PrimaryGeneratedColumn()
     id: number;
 
